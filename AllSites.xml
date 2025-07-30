@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Website Categories Suite">
+
+    <!-- Social Media & AI Test -->
+    <test name="Social Media and AI Sites">
+        <classes>
+            <class name="TestNG.TestSuiteRealTests.SocialSites"/>
+            <class name="TestNG.TestSuiteRealTests.AISites"/>
+        </classes>
+    </test>
+
+    <!-- Career & Learning Test -->
+    <test name="Job and Tutorial Sites">
+        <classes>
+            <class name="TestNG.TestSuiteRealTests.JobSites"/>
+            <class name="TestNG.TestSuiteRealTests.TutorialSites"/>
+        </classes>
+    </test>
+
+</suite>

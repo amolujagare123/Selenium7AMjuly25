@@ -1,0 +1,26 @@
+
+<suite name = "Product name">
+
+    <test name = "Primary tests">
+        <classes>
+
+            <class name = "TestNG.TestSuite1.ClassOne">
+                <methods>
+              <!--      <exclude name = "classOneTest2"/>
+                    <exclude name = "classOneTest1"/>-->
+
+                    <include name = "classOneTest1"/>
+                </methods>
+            </class>
+
+            <class name = "TestNG.TestSuite1.ClassTwo"/>
+        </classes>
+    </test>
+
+    <test name = "Internal module">
+        <classes>
+            <class name = "TestNG.TestSuite1.ClassThree"/>
+        </classes>
+    </test>
+
+</suite>
