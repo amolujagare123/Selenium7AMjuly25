@@ -1,4 +1,4 @@
-package TestNG.TestSuite1;
+package TestNG.TestNGSuite2;
 
 import org.testng.annotations.Test;
 
@@ -7,6 +7,7 @@ public class ClassThree {
     @Test
     public void classThreeTest1() {
         System.out.println("classThreeTest1");
+
     }
 
     @Test

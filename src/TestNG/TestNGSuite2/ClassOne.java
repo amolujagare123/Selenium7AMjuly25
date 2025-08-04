@@ -1,4 +1,4 @@
-package TestNG.TestSuite1;
+package TestNG.TestNGSuite2;
 
 import org.testng.annotations.Test;
 

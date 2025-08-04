@@ -1,0 +1,19 @@
+
+<suite name = "Product name">
+
+
+    <test name = "Primary tests">
+        <classes>
+            <class name = "TestNG.TestNGSuite2.ClassOne"/>
+            <class name = "TestNG.TestNGSuite2.ClassTwo"/>
+        </classes>
+    </test>
+
+    <test name = "Internal module">
+        <classes>
+            <class name = "TestNG.TestNGSuite2.BeforeSuiteExecution"/>
+            <class name = "TestNG.TestNGSuite2.ClassThree"/>
+        </classes>
+    </test>
+
+</suite>

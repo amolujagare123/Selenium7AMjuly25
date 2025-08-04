@@ -1,0 +1,21 @@
+
+<suite name = "Product name">
+
+    <parameter name="myEmail" value="ruhi@gmail.com"/>
+    <parameter name="myPhone" value="9911991199"/>
+
+
+    <test name = "Primary tests">
+        <classes>
+            <class name = "TestNG.TestSuite3.ClassOne"/>
+            <class name = "TestNG.TestSuite3.ClassTwo"/>
+        </classes>
+    </test>
+
+    <test name = "Internal module">
+        <classes>
+            <class name = "TestNG.TestSuite3.ClassThree"/>
+        </classes>
+    </test>
+
+</suite>
