@@ -8,6 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LoginDemo {
 
     @Test
@@ -20,7 +23,7 @@ public class LoginDemo {
         txtUsername.sendKeys("admin");
 
         WebElement txtPassword = driver.findElement(By.cssSelector("#login-password"));
-        txtPassword.sendKeys("admin");
+        txtPassword.sendKeys("admin1");
 
         WebElement btnLogin = driver.findElement(By.cssSelector("input[value='LOG IN']"));
         btnLogin.click();
@@ -28,9 +31,18 @@ public class LoginDemo {
        /* String expected = "POSNIC - Dashboard";
         String actual = driver.getTitle();*/
 
-        String expected = "https://stock.scriptinglogic.in/dashboard.php";
-        String actual = driver.getCurrentUrl();
+      /*  String expected = "https://stock.scriptinglogic.in/dashboard.php";
+        String actual = driver.getCurrentUrl();*/
 
+        String expected = "Dashboard";
+        String actual = "";
+        try {
+             actual = driver.findElement(By.xpath("//a[@class='active-tab dashboard-tab']")).getText();
+        }
+        catch (Exception e)
+        {
+
+        }
         System.out.println("expected="+expected);
         System.out.println("actual="+actual);
 
@@ -45,13 +57,27 @@ public class LoginDemo {
         driver.get("https://stock.scriptinglogic.in/");
 
         WebElement txtUsername = driver.findElement(By.cssSelector("#login-username"));
-        txtUsername.sendKeys("sdssd");
+        txtUsername.sendKeys("dsdsds");
 
         WebElement txtPassword = driver.findElement(By.cssSelector("#login-password"));
-        txtPassword.sendKeys("sdsd");
+        txtPassword.sendKeys("sdsdsd");
 
         WebElement btnLogin = driver.findElement(By.cssSelector("input[value='LOG IN']"));
         btnLogin.click();
+
+        String expected = "Username or Password is incorrect";
+        String actual = "";
+        try {
+            actual = driver.findElement(By.xpath("//div[@class='error-box round']")).getText();
+        }
+        catch (Exception e)
+        {
+
+        }
+        System.out.println("expected="+expected);
+        System.out.println("actual="+actual);
+
+        Assert.assertEquals(actual,expected,"incorrect or no error message");
     }
 
     @Test
@@ -69,4 +95,7 @@ public class LoginDemo {
         WebElement btnLogin = driver.findElement(By.cssSelector("input[value='LOG IN']"));
         btnLogin.click();
     }
+
+
+
 }
