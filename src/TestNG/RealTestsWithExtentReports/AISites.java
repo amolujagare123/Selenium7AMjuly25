@@ -1,25 +1,12 @@
-package TestNG.TestSuiteRealTests;
+package TestNG.RealTestsWithExtentReports;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
-public class AISites {
+public class AISites extends InitExitBrowser {
 
-    WebDriver driver;
 
-    @BeforeClass
-    public void openBrowser() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
-
-    @AfterClass
-    public void closeBrowser() {
-        driver.quit();
-    }
 
     @Test
     public void openai() {

@@ -1,4 +1,4 @@
-package TestNG.TestSuiteRealTests;
+package TestNG.AllSites;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

@@ -1,4 +1,4 @@
-package TestNG.TestSuiteRealTests;
+package TestNG.RealTestsWithExtentReports;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -6,24 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TutorialSites {
+public class TutorialSites extends InitExitBrowser{
 
-    WebDriver driver;
-
-    @BeforeClass
-    public void openBrowser() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
-
-    @AfterClass
-    public void closeBrowser() {
-        driver.quit();
-    }
 
     @Test
     public void w3schools() {
-        driver.get("https://www.w3schools.com");
+      //  driver.get("https://www.w3schools.com");
     }
 
     @Test

@@ -1,0 +1,21 @@
+
+<suite name = "Product name">
+
+    <listeners>
+        <listener class-name="ListenersDemo.MyListeners"/>
+    </listeners>
+
+    <test name = "Primary tests">
+        <classes>
+            <class name = "TestNG.TestSuite1.ClassOne"/>
+            <class name = "TestNG.TestSuite1.ClassTwo"/>
+        </classes>
+    </test>
+
+    <test name = "Internal module">
+        <classes>
+            <class name = "TestNG.TestSuite1.ClassThree"/>
+        </classes>
+    </test>
+
+</suite>

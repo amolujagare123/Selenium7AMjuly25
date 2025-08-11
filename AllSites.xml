@@ -4,16 +4,16 @@
     <!-- Social Media & AI Test -->
     <test name="Social Media and AI Sites">
         <classes>
-            <class name="TestNG.TestSuiteRealTests.SocialSites"/>
-            <class name="TestNG.TestSuiteRealTests.AISites"/>
+            <class name="TestNG.AllSites.SocialSites"/>
+            <class name="TestNG.AllSites.AISites"/>
         </classes>
     </test>
 
     <!-- Career & Learning Test -->
     <test name="Job and Tutorial Sites">
         <classes>
-            <class name="TestNG.TestSuiteRealTests.JobSites"/>
-            <class name="TestNG.TestSuiteRealTests.TutorialSites"/>
+            <class name="TestNG.AllSites.JobSites"/>
+            <class name="TestNG.AllSites.TutorialSites"/>
         </classes>
     </test>
 

@@ -2,7 +2,7 @@
 <suite name="Website Categories Suite">
 
     <listeners>
-        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+        <listener class-name="ListenersDemo.MyExtentListeners"/>
     </listeners>
 
 
